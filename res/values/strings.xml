@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Baked Beans Recorder</string>
+	<string name="Timer_D_s">Timer: %1$d s</string>
+	<string name="Start">Start</string>
+	<string name="Stop">Stop</string>
+	<string name="Notification_Sound">Notification Sound:</string>
+	<string name="hour">hour</string>
+	<string name="minute">minute</string>
+	<string name="second">second</string>
+	<string name="Human">Human</string>
+	<string name="Ringtone">Ringtone</string>
+	<string name="None">None</string>
+	<string name="Temp_Teturned">Temp Returned</string>
+	<string name="Bloom">Bloom</string>
+	<string name="Dehydrate">Dehydrate</string>
+	<string name="First_Pop">First_Pop</string>
+	<string name="Release">Release</string>
+	<string name="Tips">Tips</string>
+	<string name="Setting">Setting</string>
+	<string name="If_you_dont_want_to_be_disturbed_by_phone_calls_or_notifications_you_can_got_to_the_Wireless_and_Network_setting_page_to_turn_on_Airplane_mode">
+	    If you don\'t want to be disturbed by phone calls or notifications, you can got to the \"Wireless and Network\"setting page to turn on Airplane mode.
+	</string>
+</resources>

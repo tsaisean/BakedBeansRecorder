@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rightSettingPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentRight="true"
+   	android:layout_alignParentTop="true" >
+   
+    <ImageButton
+        android:id="@+id/imgBtnSwitchCamera"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="onSwitchCamera"
+        android:src="@drawable/ic_switch_photo_facing_holo_light" />
+
+	<ImageButton
+	    android:id="@+id/imgBtnCapture"
+	    android:layout_width="45dp"
+	    android:layout_height="45dp"
+	    android:onClick="onCapture"
+	    android:scaleType="center" 
+	       android:src="@drawable/ic_capture" />
+	
+	<ImageButton
+	    android:id="@+id/imgBtnAutoFocus"
+	    android:layout_width="45dp"
+	    android:layout_height="45dp"
+	    android:onClick="onToggleAutoFocus"
+	    android:src="@drawable/ic_autofocus" />
+	
+	<ImageButton
+	    android:id="@+id/imgBtnOpenFolder"
+	    android:layout_width="45dp"
+	    android:layout_height="45dp"
+	    android:onClick="onOpenFolder"
+	    android:visibility="invisible" />
+
+</LinearLayout>
+

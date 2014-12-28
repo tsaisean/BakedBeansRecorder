@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">烘豆紀錄器</string>
+	<string name="Timer_D_s">定時器: %1$d 秒</string>
+	<string name="Start">開始</string>
+	<string name="Stop">停止</string>
+	<string name="Notification_Sound">提示音: </string>
+	<string name="hour">時</string>
+	<string name="minute">分</string>
+	<string name="second">秒</string>
+	<string name="Human">人聲</string>
+	<string name="Ringtone">鈴聲</string>
+	<string name="None">無</string>
+	<string name="Temp_Teturned">回溫</string>
+	<string name="Bloom">悶蒸</string>
+	<string name="Dehydrate">脫水</string>
+	<string name="First_Pop">一爆</string>
+	<string name="Release">下豆</string>
+	<string name="Tips">提示</string>
+	<string name="Setting">設定</string>
+	<string name="If_you_dont_want_to_be_disturbed_by_phone_calls_or_notifications_you_can_got_to_the_Wireless_and_Network_setting_page_to_turn_on_Airplane_mode">
+	    如果不想被電話或通知打擾，可以到 \"無線與網路\" 的設定頁面開啟 \"飛航模式\"。
+	</string>
+</resources>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" >
+
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="-20dp"
+        android:drawableTop="@drawable/ic_timer"
+        android:onClick="onToggleTimer"
+        android:paddingTop="15dp"
+        android:text="@string/Start"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnNextBakingStep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="-20dp"
+        android:drawableTop="@drawable/ic_capture"
+        android:onClick="onNextBakingStep"
+        android:paddingTop="15dp"
+        android:text="Button"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

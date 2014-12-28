@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.timercamera.MainActivity" >
+
+	<group android:id="@+id/menuVoice">
+	    <item android:id="@+id/itemHuman"
+	        android:title="@string/Human"/>
+	    <item android:id="@+id/itemRingtone"
+	        android:title="@string/Ringtone"/>
+	    <item android:id="@+id/itemNone"
+	        android:title="@string/None"/>
+	</group>
+
+</menu>
