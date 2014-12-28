@@ -32,11 +32,12 @@ class SavePictureAsyncTask extends AsyncTask<Object, String, String> {
     	int rotation = (Integer)(params[2]);
     	String savePath = (String)(params[3]);
     	String fileName = (String)(params[4]);
+    	String filePrefix = "";
     	
     	Bitmap bitmap = ImageUtility.toBitmap(data);
     	bitmap = ImageUtility.rotate(bitmap, rotation);
 
-    	File pictureFile = new File(savePath, "IMG_" + fileName + ".jpg");
+    	File pictureFile = new File(savePath, filePrefix + fileName + ".jpg");
 
         try {
             FileOutputStream fos = new FileOutputStream(pictureFile);

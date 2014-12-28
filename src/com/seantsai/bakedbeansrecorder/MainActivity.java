@@ -141,8 +141,23 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         	if (mSaveFolder == null)
         		mSaveFolder = getSaveFolder();
 			SavePictureAsyncTask savePictureTask = new SavePictureAsyncTask();
-			String fileName = mTextTime.getText() + (mIsBtnNextBakingStepPressed ? "_" +
-							getString(mBakingStepsStringMap.get(mCurrenyBakingStep)) : "");
+			
+			String[] strArray = ((String) mTextTime.getText()).split(":");
+			
+			String fileName = null;
+			if (strArray.length == 2) {
+				// Make it more readable. EX: 01m:02s -> 1m:02s
+				if (strArray[0].charAt(0) == '0')
+					strArray[0] = strArray[0].substring(1);
+				
+				fileName = strArray[0] + "m" + strArray[1] + "s" + 
+							(mIsBtnNextBakingStepPressed ? "_" + getString(mBakingStepsStringMap.get(mCurrenyBakingStep)) : "");
+			}
+			else {
+				Log.d(TAG, "Time format is not correct.");
+				fileName = mTextTime.getText() + (mIsBtnNextBakingStepPressed ? "_" + getString(mBakingStepsStringMap.get(mCurrenyBakingStep)) : "");
+			}
+			
 			savePictureTask.execute(MainActivity.this, data, rotation, mSaveFolder.getPath(), fileName);
 			
             startPreview();
